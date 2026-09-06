@@ -4,5 +4,7 @@
 - DM Sans and Newsreader: Google Fonts. License files are in `fonts/`.
 - Noto Sans SC and Noto Serif SC: open-source Noto fonts, subset to the Chinese page's characters from locally installed fonts. OFL license files are in `fonts/`. When adding Chinese content, missing subset characters fall back to the reader's system fonts.
 - Icons: custom inline SVG symbols in `icons.svg`.
-- DualTopo and TopoVLM demos: supplied by the author. Full frames, duration and frame cadence preserved; H.264 MP4 / yuv420p encoding with fast-start enabled. Posters and thumbnails come from the middle frame. No scores or results were added.
+- Driving-scene demos: supplied by the author. Full frames, duration and frame cadence preserved; H.264 MP4 / yuv420p encoding with fast-start enabled. Method-name headers in videos are replaced with generic labels; data visualizations remain unchanged. Posters and thumbnails come from the middle frame of the edited videos. No scores or results were added.
 - CoPo figure and PDF: supplied by the author; the full paper's publication and license information are retained in the PDF.
+
+- Added publication illustrations: CoPo Figure 2 from the author-supplied PDF; AgentsEval Figure 2 (arXiv:2601.16685), FutureX Figure 1 (arXiv:2512.11226), and Reasoning to Regulate Figure 2 (arXiv:2607.24199), extracted from the respective public papers.

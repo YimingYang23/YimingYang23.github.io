@@ -21,7 +21,7 @@ No package installation or build service is required to serve the site. DM Sans,
 
 `index.html` is English; `zh.html` is Chinese. Both default to light mode. An explicit theme choice is remembered with a new preference key, so the old dark-first design's preference does not affect the new default.
 
-The demo gallery includes six DualTopo scenes and two TopoVLM scenes (05 and 06), with keyboard-accessible project tabs, scene thumbnails, native playback/full-screen controls and direct video links. Videos only load when played or selected; switching projects pauses the previous player. Media are in `assets/demos/`; the manifest records original source filenames. Both projects retain their manuscript-under-review status. Asset sources and font licenses are recorded in `assets/SOURCES.md`.
+The demo gallery includes six surround-view scenes and two lane-view scenes (05 and 06), with keyboard-accessible tabs, scene thumbnails, native playback/full-screen controls and direct video links. Videos only load when played or selected; switching tabs pauses the previous player. The public gallery uses descriptive scene labels and generic filenames; method names, manuscript titles, submission status, and original source filenames are omitted. Original media mappings remain in private backups. Asset sources and font licenses are recorded in `assets/SOURCES.md`.
 
 The pre-redesign site is backed up in `_private/backups/website-before-light-rebuild-20260907.zip`.
 
@@ -34,3 +34,9 @@ The pre-redesign site is backed up in `_private/backups/website-before-light-reb
 - Original website ZIP and original CV files are backed up locally in `_private/backups/`. This directory is ignored by Git and excluded from GitHub Pages. A second CV backup is saved in its original folder.
 
 The original site used styling adapted from Zeqing Yuan's academic homepage. The current design is a custom static implementation.
+
+## September 7 publication audit
+
+The bilingual pages contain 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
+
+The two demo categories highlight temporal modeling and VLM understanding. Embedded method-name headers are replaced with generic labels in all eight web videos and their thumbnails; the original author media remain in private backups.
