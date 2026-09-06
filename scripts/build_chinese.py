@@ -45,7 +45,7 @@ for node in list(s.find_all(string=True)):
  normalized=str(node).strip()
  if normalized in translations:node.replace_with(str(node).replace(normalized,translations[normalized]))
 s.select_one('h1').clear();s.select_one('h1').append(BeautifulSoup('杨奕铭<span class="name-period">.</span><span class="roman-name">Yiming Yang</span>','html.parser'))
-brand=s.select_one('.wordmark');brand.clear();brand.append(BeautifulSoup('<span class="monogram">YY</span> 杨奕铭','html.parser'))
+brand=s.select_one('.wordmark');brand.clear();brand.append(BeautifulSoup('<img class="header-avatar" src="assets/header-avatar.jpg" alt="" width="38" height="38"/> 杨奕铭','html.parser'))
 paras=s.select('.profile-copy > p')
 paras[1].clear();paras[1].append(BeautifulSoup('我研究自动驾驶系统如何<strong>感知道路场景、推理车道连接关系，并建模环境的时序变化</strong>。研究方向包括车道拓扑推理、世界模型与视觉语言模型。','html.parser'))
 paras[2].clear();paras[2].append(BeautifulSoup('我的导师是<a href="https://sse.cuhk.edu.cn/faculty/lizhen">李镇教授</a>和<a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang">崔曙光教授</a>，同时与腾讯 T Lab 开展自动驾驶相关研究合作。此前，我在中山大学跟随<a href="https://seit.sysu.edu.cn/teacher/HuHaifeng">胡海峰教授</a>和<a href="https://ise.sysu.edu.cn/teacher/1492">胡伟鹏博士</a>研究跨模态人脸识别与行人重识别。','html.parser'))
