@@ -32,6 +32,6 @@ if container is None:
     raise RuntimeError('Publication container not found; index.html was not changed.')
 container.clear()
 container.append(BeautifulSoup('\n'.join(cards), 'html.parser'))
-page.select_one('#result-count').string = f'{len(publications)} publications & preprints'
+page.select_one('#result-count').string = f'{len(publications)} papers'
 path.write_text(str(page), encoding='utf-8')
 print(f'Rendered {len(publications)} publications.')

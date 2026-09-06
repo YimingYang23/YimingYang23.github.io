@@ -1,15 +1,6 @@
 (() => {
   const zh = document.documentElement.lang === 'zh-CN';
   const t = (en, cn) => zh ? cn : en;
-  const toggle = document.querySelector('.theme-toggle');
-  const updateLabel = () => toggle.setAttribute('aria-label', document.documentElement.dataset.theme === 'dark' ? t('Switch to light theme', '切换至明亮主题') : t('Switch to dark theme', '切换至深色主题'));
-  updateLabel();
-  toggle.addEventListener('click', () => {
-    const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = theme;
-    try { localStorage.setItem('yiming-theme-v2', theme); } catch (_) {}
-    updateLabel();
-  });
   document.querySelector('.publication-tools').hidden = false;
   const papers = [...document.querySelectorAll('.paper')];
   const filters = [...document.querySelectorAll('[data-filter]')];
@@ -23,7 +14,7 @@
       paper.hidden = !match;
       if (match) count++;
     });
-    document.querySelector('#result-count').textContent = zh ? `${count} 篇论文与预印本` : `${count} ${count === 1 ? 'publication / preprint' : 'publications & preprints'}`;
+    document.querySelector('#result-count').textContent = zh ? `${count} 篇论文` : `${count} ${count === 1 ? 'paper' : 'papers'}`;
     document.querySelector('#empty-results').hidden = count !== 0;
   }
   filters.forEach(button => button.addEventListener('click', () => {

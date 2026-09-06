@@ -9,7 +9,7 @@ Static academic website hosted on GitHub Pages at https://yimingyang23.github.io
 - Edit paper metadata in `assets/publications.json`, then run `python scripts/render_publications.py` to refresh the English HTML. Install the authoring dependency with `python -m pip install -r scripts/requirements.txt`. Publications remain visible without JavaScript.
 - Run `python scripts/build_chinese.py` after English updates; reviewed Chinese translations live in that script. New English prose needs a corresponding Chinese translation.
 - English CV: `files/Yiming_Yang_CV.pdf`. Chinese CV: `files/Yiming_Yang_CV_ZH.pdf`. Both languages are linked on both pages.
-- Styles: `assets/site.css`. Search, filters, citation copying and theme switching: `assets/site.js`.
+- Styles: `assets/site.css`. Search, filters, citation copying and demo controls: `assets/site.js`.
 - Update the footer and `sitemap.xml` when publishing content changes.
 
 ## Preview
@@ -19,7 +19,7 @@ No package installation or build service is required to serve the site. DM Sans,
 
 ## Bright bilingual redesign
 
-`index.html` is English; `zh.html` is Chinese. Both default to light mode. An explicit theme choice is remembered with a new preference key, so the old dark-first design's preference does not affect the new default.
+`index.html` is English; `zh.html` is Chinese. Both use a fixed light palette. Theme switching, saved theme preferences, and dark styles are removed. Repeated decorative labels and obvious playback instructions are omitted.
 
 The demo gallery includes six surround-view scenes and two lane-view scenes (05 and 06), with keyboard-accessible tabs, scene thumbnails, native playback/full-screen controls and direct video links. Videos only load when played or selected; switching tabs pauses the previous player. The public gallery uses descriptive scene labels and generic filenames; method names, manuscript titles, submission status, and original source filenames are omitted. Original media mappings remain in private backups. Asset sources and font licenses are recorded in `assets/SOURCES.md`.
 

@@ -29,6 +29,7 @@ translations={
 'Download CV':'下载简历','English CV':'英文简历','Chinese CV':'中文简历','Google Scholar':'谷歌学术','Email':'邮箱','Prof. Zhen Li':'李镇教授','Prof. Shuguang Cui':'崔曙光教授','Prof. Haifeng Hu':'胡海峰教授','Dr. Weipeng Hu':'胡伟鹏博士','All demo files':'全部演示文件',
 }
 translations.update({
+'Research demos':'研究演示','Education & research visits':'教育与学术访问','Contact':'联系我',
 '8 SELECTED SCENES':'8 组精选场景',
 'Explore two perspectives on driving scenes: temporal modeling and vision-language understanding.':'从时序建模与视觉语言理解两个角度，观察驾驶场景。',
 'Temporal modeling':'时序建模','Lane tracks across time':'跨帧车道轨迹','01 / TEMPORAL MODELING':'01 / 时序建模',
@@ -68,7 +69,7 @@ for link in s.select('.profile-links a[data-cv-language]'):
   link['href']='files/Yiming_Yang_CV.pdf';label=' 英文简历'
  for text in list(link.find_all(string=True)):
   if str(text).strip():text.replace_with(label)
-s.select_one('#result-count').string=f"{len(s.select('.paper'))} 篇论文与预印本"
+s.select_one('#result-count').string=f"{len(s.select('.paper'))} 篇论文"
 for button in s.select('[data-scene]'):
  button['aria-label']=('时序建模 ' if button.find_parent(class_='demo-panel')['data-project']=='surround-view' else 'VLM 理解 ')+button.span.get_text(strip=True)
 for venue in s.select('.venue'):
