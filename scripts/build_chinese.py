@@ -29,6 +29,9 @@ translations={
 'Download CV':'下载简历','English CV':'英文简历','Chinese CV':'中文简历','Google Scholar':'谷歌学术','Email':'邮箱','Prof. Zhen Li':'李镇教授','Prof. Shuguang Cui':'崔曙光教授','Prof. Haifeng Hu':'胡海峰教授','Dr. Weipeng Hu':'胡伟鹏博士','All demo files':'全部演示文件',
 }
 translations.update({
+'Host: Prof. Chen Lv':'合作导师：吕辰教授','China Scholarship Council (CSC) funding':'国家留学基金管理委员会（CSC）资助',
+'Advisors: Prof. Zhen Li & Prof. Shuguang Cui':'导师：李镇教授、崔曙光教授','Full scholarship':'全额奖学金',
+'Advisor: Prof. Haifeng Hu':'导师：胡海峰教授','Ranked 1st in comprehensive evaluation':'综合测评第 1 名',
 'Ph.D. Candidate in Computer and Information Engineering':'计算机与信息工程博士候选人',
 'Passed the qualifying examination (QE) · July 2026':'2026 年 7 月通过博士资格考试（QE）',
 'JUL 2026':'2026 年 7 月','Passed my':'通过','qualifying examination (QE)':'博士资格考试（QE）','and advanced to':'，成为','Ph.D. candidacy':'博士候选人',
