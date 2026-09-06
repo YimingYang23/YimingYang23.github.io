@@ -29,6 +29,7 @@ translations={
 'Download CV':'下载简历','English CV':'英文简历','Chinese CV':'中文简历','Google Scholar':'谷歌学术','Email':'邮箱','Prof. Zhen Li':'李镇教授','Prof. Shuguang Cui':'崔曙光教授','Prof. Haifeng Hu':'胡海峰教授','Dr. Weipeng Hu':'胡伟鹏博士','All demo files':'全部演示文件',
 }
 translations.update({
+'Proposal authors:':'提案作者：','Website':'官网',
 'Host: Prof. Chen Lv':'合作导师：吕辰教授','China Scholarship Council (CSC) funding':'国家留学基金管理委员会（CSC）资助',
 'Advisors: Prof. Zhen Li & Prof. Shuguang Cui':'导师：李镇教授、崔曙光教授','Full scholarship':'全额奖学金',
 'Advisor: Prof. Haifeng Hu':'导师：胡海峰教授','Ranked 1st in comprehensive evaluation':'综合测评第 1 名',

@@ -21,3 +21,5 @@ h1,h2{font-family:'Newsreader','Noto Serif SC','Songti SC',Georgia,serif;font-we
 .thesis-entry{margin-top:9px}.thesis-link{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:14px;font-weight:500}.thesis-link .icon{width:16px;height:16px}.thesis-link:hover{text-decoration:underline;text-underline-offset:3px}
 
 .timeline .education-highlight{display:block;margin:7px 0 0;font-size:14px;line-height:1.7;font-weight:600;color:var(--accent)}
+
+#academicservices .workshop-name{font-weight:600;color:var(--accent);margin-bottom:6px}#academicservices .workshop-title{color:var(--text);line-height:1.65;margin-bottom:9px}#academicservices .workshop-authors{font-size:13px;line-height:1.8;margin-bottom:10px}.workshop-authors strong{color:var(--text)}.workshop-entry a:hover{text-decoration:underline;text-underline-offset:3px}.workshop-links{display:flex;align-items:center;gap:18px;font-size:14px;color:var(--accent)}.workshop-links a{display:inline-flex;align-items:center;gap:6px}.workshop-links .icon{width:16px;height:16px}
