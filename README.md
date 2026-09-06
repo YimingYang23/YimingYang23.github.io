@@ -40,3 +40,9 @@ The original site used styling adapted from Zeqing Yuan's academic homepage. The
 The bilingual pages contain 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
 
 The two demo categories highlight temporal modeling and VLM understanding. Embedded method-name headers are replaced with generic labels in all eight web videos and their thumbnails; the original author media remain in private backups.
+
+## Education and theses
+
+Education follows the biography. The July 2026 qualifying examination and Ph.D. candidacy are reflected in both page languages and both CVs. Thesis cards live inside the corresponding education entries, with author-supplied, unmodified PDF files in `files/`. Degree dates follow the CV; the supplied master's PDF cover is dated September 6, 2026, while the education record ends in June 2024.
+
+Body copy is 16px; small labels and metadata are generally 12–14px. The mobile education layout and scene grids accommodate the larger text.

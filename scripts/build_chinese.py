@@ -9,12 +9,12 @@ s.html['lang']='zh-CN'
 s.title.string='杨奕铭 | 自动驾驶与视觉智能'
 s.select_one('link[rel=canonical]')['href']='https://yimingyang23.github.io/zh.html'
 for el in s.select('meta[property="og:url"]'):el['content']='https://yimingyang23.github.io/zh.html'
-s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大学（深圳）博士生，研究车道拓扑推理、世界模型与视觉语言模型。查看论文、研究演示、学术经历与中英文简历。'
+s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大学（深圳）博士候选人，研究车道拓扑推理、世界模型与视觉语言模型。查看论文、研究演示、学术经历与中英文简历。'
 s.select_one('meta[property="og:title"]')['content']='Yiming Yang · 自动驾驶与视觉智能'
 s.select_one('meta[property="og:description"]')['content']='研究论文、动态演示与学术经历。香港中文大学（深圳）· 即将访问南洋理工大学 AutoMan Lab。'
 translations={
 'Skip to content':'跳转到正文','About':'关于我','Demos':'研究演示','Publications':'研究论文','Experience':'教育经历','Service':'学术服务',
-'Shenzhen, China':'中国 · 深圳','AUTONOMOUS DRIVING · VISUAL INTELLIGENCE':'自动驾驶 · 视觉智能','Ph.D. student at':'博士研究生 ·','CUHK-Shenzhen':'香港中文大学（深圳）',
+'Shenzhen, China':'中国 · 深圳','AUTONOMOUS DRIVING · VISUAL INTELLIGENCE':'自动驾驶 · 视觉智能','Ph.D. Candidate at':'博士候选人 ·','CUHK-Shenzhen':'香港中文大学（深圳）',
 'Next: NTU AutoMan Lab':'下一站：南洋理工大学 AutoMan Lab','Incoming visiting Ph.D. student · Oct 2026–Oct 2027 · Host:':'访问博士生（即将开始）· 2026.10–2027.10 · 合作导师：','Prof. Chen Lv (吕辰)':'吕辰教授','CSC Scholar · 2026':'CSC 奖学金 · 2026',
 'Latest updates':'近期动态','RESEARCH & COMMUNITY':'研究进展 · 学术交流','2026 / 2027':'2026 / 2027','AUG 2026':'2026 年 8 月','MAY 2026':'2026 年 5 月',
 'Serving as a reviewer for':'担任以下会议审稿人：','ICLR 2027, NeurIPS 2026, and AAAI 2027.':'ICLR 2027、NeurIPS 2026、AAAI 2027。','Publication':'论文发表','Award':'奖学金',
@@ -29,6 +29,16 @@ translations={
 'Download CV':'下载简历','English CV':'英文简历','Chinese CV':'中文简历','Google Scholar':'谷歌学术','Email':'邮箱','Prof. Zhen Li':'李镇教授','Prof. Shuguang Cui':'崔曙光教授','Prof. Haifeng Hu':'胡海峰教授','Dr. Weipeng Hu':'胡伟鹏博士','All demo files':'全部演示文件',
 }
 translations.update({
+'Ph.D. Candidate in Computer and Information Engineering':'计算机与信息工程博士候选人',
+'Passed the qualifying examination (QE) · July 2026':'2026 年 7 月通过博士资格考试（QE）',
+'JUL 2026':'2026 年 7 月','Passed my':'通过','qualifying examination (QE)':'博士资格考试（QE）','and advanced to':'，成为','Ph.D. candidacy':'博士候选人',
+'Master’s thesis':'硕士毕业论文','Bachelor’s thesis':'本科毕业论文',
+'Research of NIR-VIS Face Recognition Based on Modality-invariant Feature Learning':'基于模态不变特征学习的近红外-可见光人脸识别研究',
+'License Plate Detection and Recognition in Complex Environment based on Deep Learning':'基于深度学习的复杂环境下车牌检测与识别方法研究',
+'Modality-invariant representations and unsupervised learning for NIR–VIS face recognition.':'面向近红外-可见光人脸识别，研究模态不变表征与无监督学习。',
+'YOLOv5 detection, CRNN–CTC recognition, and an intelligent parking system.':'基于 YOLOv5 与 CRNN–CTC 实现车牌检测识别，并构建智能停车系统。',
+'Read PDF':'阅读 PDF','Download':'下载','PDF · Chinese · 25.8 MB':'中文 PDF · 25.8 MB','PDF · Chinese · 6.7 MB':'中文 PDF · 6.7 MB',
+
 'Research demos':'研究演示','Education & research visits':'教育与学术访问','Contact':'联系我',
 '8 SELECTED SCENES':'8 组精选场景',
 'Explore two perspectives on driving scenes: temporal modeling and vision-language understanding.':'从时序建模与视觉语言理解两个角度，观察驾驶场景。',
@@ -51,8 +61,8 @@ paras=s.select('.profile-copy > p')
 paras[1].clear();paras[1].append(BeautifulSoup('我研究自动驾驶系统如何<strong>感知道路场景、推理车道连接关系，并建模环境的时序变化</strong>。研究方向包括车道拓扑推理、世界模型与视觉语言模型。','html.parser'))
 paras[2].clear();paras[2].append(BeautifulSoup('我的导师是<a href="https://sse.cuhk.edu.cn/faculty/lizhen">李镇教授</a>和<a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang">崔曙光教授</a>，同时与腾讯 T Lab 开展自动驾驶相关研究合作。此前，我在中山大学跟随<a href="https://seit.sysu.edu.cn/teacher/HuHaifeng">胡海峰教授</a>和<a href="https://ise.sysu.edu.cn/teacher/1492">胡伟鹏博士</a>研究跨模态人脸识别与行人重识别。','html.parser'))
 news=s.select('.news-row p')
-news[1].clear();news[1].append(BeautifulSoup('<a href="files/CoPo-KDD2026.pdf"><strong>CoPo</strong></a> 发表于 <strong>KDD 2026</strong>：以几何引导的表征实现一致的车道与交通拓扑推理。','html.parser'))
-news[2].clear();news[2].append(BeautifulSoup('获得<strong>国家留学基金管理委员会（CSC）奖学金</strong>，支持赴南洋理工大学开展学术访问。','html.parser'))
+s.select_one('[data-news="copo"] p').clear();s.select_one('[data-news="copo"] p').append(BeautifulSoup('<a href="files/CoPo-KDD2026.pdf"><strong>CoPo</strong></a> 发表于 <strong>KDD 2026</strong>：以几何引导的表征实现一致的车道与交通拓扑推理。','html.parser'))
+s.select_one('[data-news="csc"] p').clear();s.select_one('[data-news="csc"] p').append(BeautifulSoup('获得<strong>国家留学基金管理委员会（CSC）奖学金</strong>，支持赴南洋理工大学开展学术访问。','html.parser'))
 for el in s.select('[placeholder]'):el['placeholder']='题目、作者或会议期刊' if el.get('id')=='paper-search' else el['placeholder']
 for el in s.select('[aria-label]'):
  text=el['aria-label'];el['aria-label']=translations.get(text,text)
@@ -74,5 +84,7 @@ for button in s.select('[data-scene]'):
  button['aria-label']=('时序建模 ' if button.find_parent(class_='demo-panel')['data-project']=='surround-view' else 'VLM 理解 ')+button.span.get_text(strip=True)
 for venue in s.select('.venue'):
  if venue.get_text().startswith('Preprint'):venue.string=venue.get_text().replace('Preprint','预印本')
+s.select_one('[data-news="qe"] p').clear()
+s.select_one('[data-news="qe"] p').append(BeautifulSoup('通过<strong>博士资格考试（QE）</strong>，成为<strong>博士候选人（Ph.D. Candidate）</strong>。','html.parser'))
 (root/'zh.html').write_text(str(s),encoding='utf-8')
 print('Built Chinese page.')
