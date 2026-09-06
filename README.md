@@ -46,3 +46,5 @@ The two demo categories highlight temporal modeling and VLM understanding. Embed
 Education follows the biography. Ph.D. candidacy is reflected in both page languages and both CVs. On the website, the July 2026 qualifying examination appears only in the news. Each completed degree has a compact thesis PDF link; author-supplied PDF files in `files/` remain unmodified. Degree dates follow the CV; the supplied master's PDF cover is dated September 6, 2026, while the education record ends in June 2024.
 
 Body copy is 16px; small labels and metadata are generally 12–14px. The mobile education layout and scene grids accommodate the larger text.
+
+The Selected toggle combines with topic and text filters. It includes papers whose first listed author is Yiming Yang and papers whose `equal_contribution` list explicitly includes Yiming Yang. Add confirmed co-first authors to that list; a trailing author asterisk alone is not treated as equal contribution.

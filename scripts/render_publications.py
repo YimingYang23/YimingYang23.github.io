@@ -11,6 +11,8 @@ bib = (root / 'files/CoPo-KDD2026.bib').read_text(encoding='utf-8')
 escape = html.escape
 cards = []
 for paper in publications:
+    first_author = paper['authors'].split(',')[0].strip().rstrip('*').strip()
+    selected = first_author == 'Yiming Yang' or 'Yiming Yang' in paper.get('equal_contribution', [])
     authors = escape(paper['authors']).replace('Yiming Yang', '<strong>Yiming Yang</strong>')
     for name in paper.get('equal_contribution', []):
         marked_name = '<strong>Yiming Yang</strong>' if name == 'Yiming Yang' else escape(name)
@@ -33,7 +35,7 @@ for paper in publications:
         citation = (f'<details class="citation"><summary>BibTeX</summary><pre id="copo-bib">{escape(bib)}</pre>'
                     '<button type="button" id="copy-citation">Copy citation</button> '
                     '<a href="files/CoPo-KDD2026.bib" download>Download .bib</a></details>')
-    cards.append(f'''<article class="paper" data-topic="{escape(paper['topic'])}" data-year="{paper['year']}">
+    cards.append(f'''<article class="paper" data-topic="{escape(paper['topic'])}" data-year="{paper['year']}" data-selected="{str(selected).lower()}">
       {illustration}
       <div class="paper-body"><div class="paper-meta"><span class="venue">{escape(paper['venue'])}</span><span>{escape(paper['topic'])}</span></div>
       <h3>{title}</h3><p class="authors">{authors}</p>{author_note}{('<div class="paper-links">' + links + '</div>') if links else ''}{citation}</div></article>''')

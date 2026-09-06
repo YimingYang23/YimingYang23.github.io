@@ -5,12 +5,14 @@
   const papers = [...document.querySelectorAll('.paper')];
   const filters = [...document.querySelectorAll('[data-filter]')];
   const search = document.querySelector('#paper-search');
+  const selectedButton = document.querySelector('#selected-papers');
+  let selectedOnly = false;
   let topic = 'All';
   function filter() {
     const query = search.value.trim().toLocaleLowerCase();
     let count = 0;
     papers.forEach(paper => {
-      const match = (topic === 'All' || paper.dataset.topic === topic) && paper.textContent.toLocaleLowerCase().includes(query);
+      const match = (!selectedOnly || paper.dataset.selected === 'true') && (topic === 'All' || paper.dataset.topic === topic) && paper.textContent.toLocaleLowerCase().includes(query);
       paper.hidden = !match;
       if (match) count++;
     });
@@ -23,6 +25,11 @@
     filter();
   }));
   search.addEventListener('input', filter);
+  selectedButton.addEventListener('click', () => {
+    selectedOnly = !selectedOnly;
+    selectedButton.setAttribute('aria-pressed', String(selectedOnly));
+    filter();
+  });
   const copy = document.querySelector('#copy-citation');
   let toastTimer;
   copy.addEventListener('click', async () => {

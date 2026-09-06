@@ -13,6 +13,7 @@ s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大
 s.select_one('meta[property="og:title"]')['content']='Yiming Yang · 自动驾驶与视觉智能'
 s.select_one('meta[property="og:description"]')['content']='研究论文、动态演示与学术经历。香港中文大学（深圳）· 即将访问南洋理工大学 AutoMan Lab。'
 translations={
+'Selected':'精选',
 'Under review':'在投','* Equal contribution':'* 共同第一作者',
 'Skip to content':'跳转到正文','About':'关于我','Demos':'研究演示','Publications':'研究论文','Experience':'教育经历','Service':'学术服务',
 'Shenzhen, China':'中国 · 深圳','AUTONOMOUS DRIVING · VISUAL INTELLIGENCE':'自动驾驶 · 视觉智能','Ph.D. Candidate at':'博士候选人 ·','CUHK-Shenzhen':'香港中文大学（深圳）',
@@ -86,6 +87,7 @@ for link in s.select('.profile-links a[data-cv-language]'):
  for text in list(link.find_all(string=True)):
   if str(text).strip():text.replace_with(label)
 s.select_one('#result-count').string=f"{len(s.select('.paper'))} 篇论文"
+s.select_one('#selected-papers')['title']='筛选第一作者及共同第一作者论文'
 for button in s.select('[data-scene]'):
  button['aria-label']=('时序建模 ' if button.find_parent(class_='demo-panel')['data-project']=='surround-view' else 'VLM 理解 ')+button.span.get_text(strip=True)
 for venue in s.select('.venue'):
