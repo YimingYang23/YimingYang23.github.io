@@ -26,7 +26,7 @@ translations={
 'Honors & awards':'荣誉与奖励','CSC Scholarship':'国家公派留学奖学金（CSC）','Overseas research visit · Awarded May 2026':'支持海外学术访问 · 2026 年 5 月获批','National Scholarship':'国家奖学金','Outstanding Master\'s Graduate':'优秀硕士毕业生','Excellent Master\'s Thesis · Sun Yat-sen University':'优秀硕士学位论文 · 中山大学','Excellent Bachelor\'s Thesis':'优秀本科毕业论文','SPECIAL GRADE':'特等','Guo Xie Bi Rong Scholarship':'郭谢碧蓉奖学金','Academic service':'学术服务','Conference reviewer':'会议审稿人','Workshop organizer':'研讨会组织者','Journal reviewer':'期刊审稿人','Teaching experience':'教学经历','Teaching Assistant · CUHK-Shenzhen':'助教 · 香港中文大学（深圳）',
 'CIE6020: Information Theory · Fall 2025':'CIE6020：信息论 · 2025 年秋季','CIE6032: Selected Topics in Deep Learning Foundations and Their Applications · Summer 2026':'CIE6032：深度学习基础与应用专题 · 2026 年夏季','Robust and Generalized Lane Topology Understanding and HD Map Generation through CoT Design.':'通过思维链设计实现稳健、可泛化的车道拓扑理解与高精地图生成。',
 'CONTACT':'联系我','Let\'s talk research.':'欢迎交流与合作。','I welcome conversations and collaborations in autonomous driving,':'欢迎围绕自动驾驶、车道拓扑推理与跨模态学习','lane topology reasoning, and cross-modal learning.':'开展学术交流和研究合作。','© 2026 Yiming Yang · Updated September 2026':'© 2026 Yiming Yang · 更新于 2026 年 9 月','Curriculum vitae':'个人简历','Back to top ↑':'返回顶部 ↑',
-'Download CV':'下载简历','English CV':'英文简历','Chinese CV':'中文简历','Google Scholar':'谷歌学术','Email':'邮箱','Prof. Zhen Li':'李镇教授','Prof. Shuguang Cui':'崔曙光教授','Prof. Haifeng Hu':'胡海峰教授','Dr. Weipeng Hu':'胡伟鹏博士','All demo files':'全部演示文件',
+'Download CV':'下载简历','English CV':'英文简历','Chinese CV':'中文简历','Google Scholar':'谷歌学术','Email':'邮箱','Prof. Zhen Li':'李镇教授','Prof. Shuguang Cui':'崔曙光教授','Prof. Haifeng Hu':'胡海峰教授','Prof. Weipeng Hu':'胡伟鹏教授','All demo files':'全部演示文件',
 }
 translations.update({
 'Medical AI':'医学 AI','Embodied AI':'具身智能',
@@ -64,7 +64,7 @@ s.select_one('h1').clear();s.select_one('h1').append(BeautifulSoup('杨奕铭<sp
 brand=s.select_one('.wordmark');brand.clear();brand.append(BeautifulSoup('<img class="header-avatar" src="assets/header-avatar.jpg" alt="" width="38" height="38"/> 杨奕铭','html.parser'))
 paras=s.select('.profile-copy > p')
 paras[1].clear();paras[1].append(BeautifulSoup('我研究自动驾驶系统如何<strong>感知道路场景、推理车道连接关系，并建模环境的时序变化</strong>。研究方向包括车道拓扑推理、世界模型与视觉语言模型。','html.parser'))
-paras[2].clear();paras[2].append(BeautifulSoup('我的导师是<a href="https://sse.cuhk.edu.cn/faculty/lizhen">李镇教授</a>和<a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang">崔曙光教授</a>，同时与腾讯 T Lab 开展自动驾驶相关研究合作。此前，我在中山大学跟随<a href="https://seit.sysu.edu.cn/teacher/HuHaifeng">胡海峰教授</a>和<a href="https://ise.sysu.edu.cn/teacher/1492">胡伟鹏博士</a>研究跨模态人脸识别与行人重识别。','html.parser'))
+paras[2].clear();paras[2].append(BeautifulSoup('我的导师是<a href="https://sse.cuhk.edu.cn/faculty/lizhen">李镇教授</a>和<a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang">崔曙光教授</a>，同时与腾讯 T Lab 开展自动驾驶相关研究合作。此前，我在中山大学跟随<a href="https://seit.sysu.edu.cn/teacher/HuHaifeng">胡海峰教授</a>和<a href="https://ise.sysu.edu.cn/teacher/1492">胡伟鹏教授</a>研究跨模态人脸识别与行人重识别。','html.parser'))
 news=s.select('.news-row p')
 s.select_one('[data-news="copo"] p').clear();s.select_one('[data-news="copo"] p').append(BeautifulSoup('<a href="files/CoPo-KDD2026.pdf"><strong>CoPo</strong></a> 发表于 <strong>KDD 2026</strong>：以几何引导的表征实现一致的车道与交通拓扑推理。','html.parser'))
 s.select_one('[data-news="csc"] p').clear();s.select_one('[data-news="csc"] p').append(BeautifulSoup('获得<strong>国家留学基金管理委员会（CSC）奖学金</strong>，支持赴南洋理工大学开展学术访问。','html.parser'))
