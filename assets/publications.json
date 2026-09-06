@@ -1,0 +1,272 @@
+[
+  {
+    "title": "Geometry-Guided Representations for Coherent Lane and Traffic Topology Reasoning in Driving Scenes",
+    "authors": "Yueru Luo, Changqing Zhou, Yiming Yang, Erlong Li, Chao Zheng, Shuguang Cui, Zhen Li",
+    "venue": "KDD 2026",
+    "year": 2026,
+    "image": "assets/copo.webp",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "files/CoPo-KDD2026.pdf"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3770855.3817889"
+      },
+      {
+        "label": "Code & data",
+        "url": "https://doi.org/10.5281/zenodo.20455469"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
+    "title": "DriveFlow: Rectified Flow Adaptation for Robust 3D Object Detection in Autonomous Driving",
+    "authors": "Hongbin Lin, Yiming Yang, Chaoda Zheng, Yifan Zhang, Shuangcheng Niu, Zilu Guo, Yafeng Li, Gui Gui, Shuguang Cui, Zhen Li*",
+    "venue": "AAAI 2026",
+    "year": 2026,
+    "image": "images/driveflow.jpg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2511.18713"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Hongbin98/DriveFlow"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
+    "title": "FASTopoWM: Fast-Slow Lane Segment Topology Reasoning with Latent World Models",
+    "authors": "Yiming Yang, Hongbin Lin, Yueru Luo, Suzhong Fu, Chao Zheng, Xinrui Yan, Shuqi Mei, Kun Tang, Shuguang Cui, Zhen Li*",
+    "venue": "Preprint · 2025",
+    "year": 2025,
+    "image": "images/FASTopoWM.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2507.23325"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/YimingYang23/FASTopoWM"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
+    "title": "TopoStreamer: Temporal Lane Segment Topology Reasoning in Autonomous Driving",
+    "authors": "Yiming Yang, Yueru Luo, Bingkun He, Hongbin Lin, Suzhong Fu, Chao Zheng, Zhipeng Cao, Erlong Li, Chao Yan, Shuguang Cui, Zhen Li*",
+    "venue": "Preprint · 2025",
+    "year": 2025,
+    "image": "images/TopoStreamer.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2507.00709"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/YimingYang23/TopoStreamer"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
+    "title": "Dynamic Modality–Camera-Invariant Clustering for Unsupervised Visible–Infrared Person Re-Identification",
+    "authors": "Yiming Yang, Weipeng Hu, Qiaolin He, Haifeng Hu*",
+    "venue": "TNNLS 2025",
+    "year": 2025,
+    "image": "images/DMIC.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11061251"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Topo2Seq: Enhanced Topology Reasoning via Topology Sequence Learning",
+    "authors": "Yiming Yang, Yueru Luo, Bingkun He, Erlong Li, Zhipeng Cao, Chao Zheng, Shuqi Mei, Zhen Li*",
+    "venue": "AAAI 2025 Oral",
+    "year": 2025,
+    "image": "images/Topo2Seq.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2502.08974"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
+    "title": "Progressive Cross-Modal Association Learning for Unsupervised Visible-Infrared Person Re-Identification",
+    "authors": "Yiming Yang, Weipeng Hu, Haifeng Hu*",
+    "venue": "TIFS 2025",
+    "year": 2025,
+    "image": "images/PCAL.jpg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10833701"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/YimingYang23/PCA_USLVIReID"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "VesSAM: Efficient Multi-Prompting for Segmenting Complex Vessel",
+    "authors": "Suzhong Fu, Rui Sun, Xuan Ding, Jingqi Dong, Yiming Yang, Yao Zhu, Min Chang Jordan Ren, Delin Deng, Angelica Aviles-Rivero, Shuguang Cui, Zhen Li*",
+    "venue": "BIBM 2025",
+    "year": 2025,
+    "image": "images/BIBM.jpg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2511.00981"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/VersaceSu/VesSAM"
+      }
+    ],
+    "topic": "Other vision"
+  },
+  {
+    "title": "Part-based Bi-directional Enhancement Learning for Unsupervised Visible-Infrared Re-identification",
+    "authors": "Qiaolin He, Yiming Yang, Zihan Wang, Haifeng Hu*",
+    "venue": "TIFS 2025",
+    "year": 2025,
+    "image": "images/PBE.jpg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11230802"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/heqlin5/PBE"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Unsupervised Visible-Infrared Person ReID via Modality-Camera Balance Label Refinement",
+    "authors": "Jiakai He, Yiming Yang, Ruixing Wu, Haifeng Hu*",
+    "venue": "TOMM 2025",
+    "year": 2025,
+    "image": "images/MCBL.jpg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3772086"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Extended Cross-Modality United Learning for Unsupervised Visible-Infrared Person Re-identification",
+    "authors": "Ruixing Wu, Yiming Yang, Jiakai He, Haifeng Hu*",
+    "venue": "SPL 2025",
+    "year": 2025,
+    "image": "images/ECUL.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/11003884"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Motion-guided token prioritization and semantic degradation fusion for exo-to-ego cross-view video generation",
+    "authors": "Weipeng Hu, Jiun Tian Hoe, Runzhong Zhang, Yiming Yang, Haifeng Hu, Yap-Peng Tan*",
+    "venue": "Information Fusion 2025",
+    "year": 2025,
+    "image": "images/TPDF.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.sciencedirect.com/science/article/pii/S156625352500346X"
+      }
+    ],
+    "topic": "Other vision"
+  },
+  {
+    "title": "Pseudo Label Association and Prototype-Based Invariant Learning for Semi-Supervised NIR-VIS Face Recognition",
+    "authors": "Weipeng Hu, Yiming Yang, Haifeng Hu*",
+    "venue": "TIP 2024",
+    "year": 2024,
+    "image": "images/LPL.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10438381"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Unsupervised NIR-VIS Face Recognition via Homogeneous-to-heterogeneous Learning and Residual-invariant Enhancement",
+    "authors": "Yiming Yang, Weipeng Hu, Haifeng Hu*",
+    "venue": "TIFS 2023",
+    "year": 2023,
+    "image": "images/HERE.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10371345"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Robust Cross-domain Pseudo-labeling and Contrastive Learning for Unsupervised Domain Adaptation NIR-VIS Face Recognition",
+    "authors": "Yiming Yang, Weipeng Hu, Haiqi Lin, Haifeng Hu*",
+    "venue": "TIP 2023",
+    "year": 2023,
+    "image": "images/RPC.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10250166"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Neutral Face Learning and Progressive Fusion Synthesis Network for NIR-VIS Face Recognition",
+    "authors": "Yiming Yang, Weipeng Hu, Haifeng Hu*",
+    "venue": "TCSVT 2023",
+    "year": 2023,
+    "image": "images/NLPF.png",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10066333"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  },
+  {
+    "title": "Syncretic Space Learning Network for NIR-VIS Face Recognition",
+    "authors": "Yiming Yang, Weipeng Hu, Haifeng Hu*",
+    "venue": "TOMM 2023",
+    "year": 2023,
+    "image": "images/ssl.jpg",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://dl.acm.org/doi/full/10.1145/3607143"
+      }
+    ],
+    "topic": "Cross-modal recognition"
+  }
+]
