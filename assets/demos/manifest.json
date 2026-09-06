@@ -1,0 +1,70 @@
+{
+  "dualtopo": [
+    {
+      "src": "assets/demos/dualtopo-01.mp4",
+      "poster": "assets/demos/dualtopo-01.webp",
+      "thumbnail": "assets/demos/dualtopo-01-thumb.webp",
+      "label": "Scene 01",
+      "source": "vis1.gif",
+      "duration": 3.84
+    },
+    {
+      "src": "assets/demos/dualtopo-02.mp4",
+      "poster": "assets/demos/dualtopo-02.webp",
+      "thumbnail": "assets/demos/dualtopo-02-thumb.webp",
+      "label": "Scene 02",
+      "source": "vis2.gif",
+      "duration": 3.84
+    },
+    {
+      "src": "assets/demos/dualtopo-03.mp4",
+      "poster": "assets/demos/dualtopo-03.webp",
+      "thumbnail": "assets/demos/dualtopo-03-thumb.webp",
+      "label": "Scene 03",
+      "source": "vis3.gif",
+      "duration": 3.84
+    },
+    {
+      "src": "assets/demos/dualtopo-04.mp4",
+      "poster": "assets/demos/dualtopo-04.webp",
+      "thumbnail": "assets/demos/dualtopo-04-thumb.webp",
+      "label": "Scene 04",
+      "source": "vis4.gif",
+      "duration": 3.84
+    },
+    {
+      "src": "assets/demos/dualtopo-05.mp4",
+      "poster": "assets/demos/dualtopo-05.webp",
+      "thumbnail": "assets/demos/dualtopo-05-thumb.webp",
+      "label": "Scene 05",
+      "source": "vis5.gif",
+      "duration": 3.84
+    },
+    {
+      "src": "assets/demos/dualtopo-06.mp4",
+      "poster": "assets/demos/dualtopo-06.webp",
+      "thumbnail": "assets/demos/dualtopo-06-thumb.webp",
+      "label": "Scene 06",
+      "source": "vis6.gif",
+      "duration": 3.84
+    }
+  ],
+  "topovlm": [
+    {
+      "src": "assets/demos/topovlm-05.mp4",
+      "poster": "assets/demos/topovlm-05.webp",
+      "thumbnail": "assets/demos/topovlm-05-thumb.webp",
+      "label": "Scene 05",
+      "source": "scene11029_pred_text_arrows_ego_laneid.mp4",
+      "duration": 6.67
+    },
+    {
+      "src": "assets/demos/topovlm-06.mp4",
+      "poster": "assets/demos/topovlm-06.webp",
+      "thumbnail": "assets/demos/topovlm-06-thumb.webp",
+      "label": "Scene 06",
+      "source": "scene11046_pred_text_arrows_ego_laneid.mp4",
+      "duration": 6.5
+    }
+  ]
+}

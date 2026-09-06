@@ -15,8 +15,8 @@
         "url": "https://doi.org/10.1145/3770855.3817889"
       },
       {
-        "label": "Code & data",
-        "url": "https://doi.org/10.5281/zenodo.20455469"
+        "label": "Code",
+        "url": "https://github.com/JMoonr/copo/tree/v1.0.0"
       }
     ],
     "topic": "Autonomous driving"

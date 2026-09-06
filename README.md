@@ -6,15 +6,24 @@ Static academic website hosted on GitHub Pages at https://yimingyang23.github.io
 ## Update content
 
 - Edit biography, news, experience and service in `index.html`.
-- Edit paper metadata in `assets/publications.json`, then run `python scripts/render_publications.py` to refresh the HTML. This uses only Python's standard library. Publications remain visible without JavaScript.
-- Replace `files/Yiming_Yang_CV.pdf` to update all CV download buttons.
+- Edit paper metadata in `assets/publications.json`, then run `python scripts/render_publications.py` to refresh the English HTML. Install the authoring dependency with `python -m pip install -r scripts/requirements.txt`. Publications remain visible without JavaScript.
+- Run `python scripts/build_chinese.py` after English updates; reviewed Chinese translations live in that script. New English prose needs a corresponding Chinese translation.
+- English CV: `files/Yiming_Yang_CV.pdf`. Chinese CV: `files/Yiming_Yang_CV_ZH.pdf`. Both languages are linked on both pages.
 - Styles: `assets/site.css`. Search, filters, citation copying and theme switching: `assets/site.js`.
 - Update the footer and `sitemap.xml` when publishing content changes.
 
 ## Preview
 
 Run `python -m http.server 8765 --bind 127.0.0.1` and open http://127.0.0.1:8765/.
-No package installation or build service is required. Web fonts are optional; local font fallbacks are supplied.
+No package installation or build service is required to serve the site. DM Sans, Newsreader, Noto Sans SC and Noto Serif SC are served locally, with system-font fallbacks.
+
+## Bright bilingual redesign
+
+`index.html` is English; `zh.html` is Chinese. Both default to light mode. An explicit theme choice is remembered with a new preference key, so the old dark-first design's preference does not affect the new default.
+
+The demo gallery includes six DualTopo scenes and two TopoVLM scenes (05 and 06), with keyboard-accessible project tabs, scene thumbnails, native playback/full-screen controls and direct video links. Videos only load when played or selected; switching projects pauses the previous player. Media are in `assets/demos/`; the manifest records original source filenames. Both projects retain their manuscript-under-review status. Asset sources and font licenses are recorded in `assets/SOURCES.md`.
+
+The pre-redesign site is backed up in `_private/backups/website-before-light-rebuild-20260907.zip`.
 
 ## September 2026 content update
 
