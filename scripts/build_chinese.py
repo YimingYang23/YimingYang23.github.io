@@ -13,6 +13,7 @@ s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大
 s.select_one('meta[property="og:title"]')['content']='Yiming Yang · 自动驾驶与视觉智能'
 s.select_one('meta[property="og:description"]')['content']='研究论文、动态演示与学术经历。香港中文大学（深圳）· 即将访问南洋理工大学 AutoMan Lab。'
 translations={
+'Under review':'在投','* Equal contribution':'* 共同第一作者',
 'Skip to content':'跳转到正文','About':'关于我','Demos':'研究演示','Publications':'研究论文','Experience':'教育经历','Service':'学术服务',
 'Shenzhen, China':'中国 · 深圳','AUTONOMOUS DRIVING · VISUAL INTELLIGENCE':'自动驾驶 · 视觉智能','Ph.D. Candidate at':'博士候选人 ·','CUHK-Shenzhen':'香港中文大学（深圳）',
 'Next: NTU AutoMan Lab':'下一站：南洋理工大学 AutoMan Lab','Incoming visiting Ph.D. student · Oct 2026–Oct 2027 · Host:':'访问博士生（即将开始）· 2026.10–2027.10 · 合作导师：','Prof. Chen Lv (吕辰)':'吕辰教授','CSC Scholar · 2026':'CSC 奖学金 · 2026',

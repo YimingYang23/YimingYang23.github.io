@@ -37,7 +37,7 @@ The original site used styling adapted from Zeqing Yuan's academic homepage. The
 
 ## September 7 publication audit
 
-The bilingual pages contain 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
+The bilingual pages contain 22 research works, including two manuscripts under review (TopoMind and TopoVLM) shown without full-text links. TopoMind marks Yihuan Yao and Yiming Yang as equal contributors. The previous Scholar audit covered 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
 
 The two demo categories highlight temporal modeling and VLM understanding. Embedded method-name headers are replaced with generic labels in all eight web videos and their thumbnails; the original author media remain in private backups.
 

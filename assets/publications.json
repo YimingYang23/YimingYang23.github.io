@@ -22,6 +22,28 @@
     "topic": "Autonomous driving"
   },
   {
+    "title": "TopoMind: Unifying Lane Topology Reasoning and Understanding on Driving Scenes",
+    "authors": "Yihuan Yao, Yiming Yang, Hongbin Lin, Chuang Yang, Chao Zhan, Suzhong Fu, Chao Zheng, Chen Lv, Shuguang Cui, Zhen Li",
+    "equal_contribution": [
+      "Yihuan Yao",
+      "Yiming Yang"
+    ],
+    "venue": "Under review",
+    "year": 2026,
+    "image": "assets/topomind-motivation.webp",
+    "links": [],
+    "topic": "Autonomous driving"
+  },
+  {
+    "title": "TopoVLM: Unveiling the Power of Vision-Language Models in Lane Topology Reasoning",
+    "authors": "Yiming Yang, Chao Zhan, Yihuan Yao, Hongbin Lin, Yueru Luo, Wan lihui, Suzhong Fu, Chao Zheng, Chen Lv, Shuguang Cui, Zhen Li",
+    "venue": "Under review",
+    "year": 2026,
+    "image": "assets/topovlm-framework.webp",
+    "links": [],
+    "topic": "Autonomous driving"
+  },
+  {
     "title": "DriveFlow: Rectified Flow Adaptation for Robust 3D Object Detection in Autonomous Driving",
     "authors": "Hongbin Lin, Yiming Yang, Chaoda Zheng, Yifan Zhang, Shuangcheng Niu, Zilu Guo, Yafeng Li, Gui Gui, Shuguang Cui, Zhen Li*",
     "venue": "AAAI 2026",
