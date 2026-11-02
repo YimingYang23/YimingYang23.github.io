@@ -13,6 +13,7 @@ s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大
 s.select_one('meta[property="og:title"]')['content']='Yiming Yang · 自动驾驶与视觉智能'
 s.select_one('meta[property="og:description"]')['content']='研究论文、动态演示与学术经历。香港中文大学（深圳）· 正在南洋理工大学 AutoMan Lab 访问。'
 translations={
+'Advisor: Prof. Huaibo Song':'导师：宋怀波教授',
 'Selected':'精选',
 'Under review':'在投','* Equal contribution':'* 共同第一作者',
 'Skip to content':'跳转到正文','About':'关于我','Demos':'研究演示','Publications':'研究论文','Experience':'教育经历','Service':'学术服务',
