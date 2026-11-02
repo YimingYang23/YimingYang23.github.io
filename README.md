@@ -37,7 +37,7 @@ The original site used styling adapted from Zeqing Yuan's academic homepage. The
 
 ## September 7 publication audit
 
-The bilingual pages contain 22 research works, including two manuscripts under review (TopoMind and TopoVLM) shown without full-text links. TopoMind marks Yihuan Yao and Yiming Yang as equal contributors. The previous Scholar audit covered 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
+The bilingual pages contain 23 research works, including two manuscripts under review (TopoMind and TopoVLM) shown without full-text links. TopoMind marks Yihuan Yao and Yiming Yang as equal contributors. The previous Scholar audit covered 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
 
 The two demo categories highlight temporal modeling and VLM understanding. Embedded method-name headers are replaced with generic labels in all eight web videos and their thumbnails; the original author media remain in private backups.
 
@@ -48,3 +48,7 @@ Education follows the biography. Ph.D. candidacy is reflected in both page langu
 Body copy is 16px; small labels and metadata are generally 12–14px. The mobile education layout and scene grids accommodate the larger text.
 
 The Selected toggle combines with topic and text filters. It includes papers whose first listed author is Yiming Yang and papers whose `equal_contribution` list explicitly includes Yiming Yang. Add confirmed co-first authors to that list; a trailing author asterisk alone is not treated as equal contribution.
+
+## November 2, 2026 update
+
+Added RoXDrive as a 2026 preprint, with its method framework and paper/code links. The NTU visiting appointment is now marked ongoing for October 2026–October 2027 in both page languages.
