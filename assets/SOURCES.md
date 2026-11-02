@@ -11,4 +11,4 @@
 
 - Under-review work illustrations: TopoMind Figure 1 (motivation) and TopoVLM Figure 2 (framework), cropped from author-supplied manuscripts. Only these illustrations are public; neither manuscript PDF is included. TopoMind authors and equal contribution follow the author's supplied list; TopoVLM authors follow the author-provided OpenReview author list, including the supplied spelling "Wan lihui".
 
-- RoXDrive: Figure 3 (method framework), title, authors, equal-contribution marks, and paper/code links from the author-supplied `2609.36851v2.pdf` (arXiv version dated September 30, 2026).
+- RoXDrive: Figure 3 (method framework), title, authors, and paper/code links from the author-supplied `2609.36851v2.pdf` (arXiv version dated September 30, 2026).

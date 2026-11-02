@@ -16,7 +16,7 @@ translations={
 'Selected':'精选',
 'Under review':'在投','* Equal contribution':'* 共同第一作者',
 'Skip to content':'跳转到正文','About':'关于我','Demos':'研究演示','Publications':'研究论文','Experience':'教育经历','Service':'学术服务',
-'Shenzhen, China':'中国 · 深圳','AUTONOMOUS DRIVING · VISUAL INTELLIGENCE':'自动驾驶 · 视觉智能','Ph.D. Candidate at':'博士候选人 ·','CUHK-Shenzhen':'香港中文大学（深圳）',
+'Singapore':'新加坡','AUTONOMOUS DRIVING · VISUAL INTELLIGENCE':'自动驾驶 · 视觉智能','Ph.D. Candidate at':'博士候选人 ·','CUHK-Shenzhen':'香港中文大学（深圳）',
 'Next: NTU AutoMan Lab':'下一站：南洋理工大学 AutoMan Lab','Incoming visiting Ph.D. student · Oct 2026–Oct 2027 · Host:':'访问博士生（即将开始）· 2026.10–2027.10 · 合作导师：','Prof. Chen Lv (吕辰)':'吕辰教授','CSC Scholar · 2026':'CSC 奖学金 · 2026',
 'Latest updates':'近期动态','RESEARCH & COMMUNITY':'研究进展 · 学术交流','2026 / 2027':'2026 / 2027','AUG 2026':'2026 年 8 月','MAY 2026':'2026 年 5 月',
 'Serving as a reviewer for':'担任以下会议审稿人：','ICLR 2027, NeurIPS 2026, and AAAI 2027.':'ICLR 2027、NeurIPS 2026、AAAI 2027。','Publication':'论文发表','Award':'奖学金',
@@ -65,7 +65,7 @@ for node in list(s.find_all(string=True)):
 s.select_one('h1').clear();s.select_one('h1').append(BeautifulSoup('杨奕铭<span class="name-period">.</span><span class="roman-name">Yiming Yang</span>','html.parser'))
 brand=s.select_one('.wordmark');brand.clear();brand.append(BeautifulSoup('<img class="header-avatar" src="assets/header-avatar.jpg" alt="" width="38" height="38"/> 杨奕铭','html.parser'))
 paras=s.select('.profile-copy > p')
-paras[1].clear();paras[1].append(BeautifulSoup('我研究自动驾驶系统如何<strong>感知道路场景、推理车道连接关系，并建模环境的时序变化</strong>。研究方向包括车道拓扑推理、世界模型与视觉语言模型。','html.parser'))
+paras[1].clear();paras[1].append(BeautifulSoup('我研究自动驾驶系统如何<strong>感知道路场景、推理车道连接关系，并建模环境的时序变化</strong>。研究方向包括车道拓扑推理、世界模型与视觉语言模型。目前，我正在新加坡南洋理工大学（NTU）的 <a href="https://lvchen.wixsite.com/automan" rel="noopener" target="_blank">AutoMan Lab</a> 担任访问博士生。','html.parser'))
 paras[2].clear();paras[2].append(BeautifulSoup('我的导师是<a href="https://sse.cuhk.edu.cn/faculty/lizhen">李镇教授</a>和<a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang">崔曙光教授</a>，同时与腾讯 T Lab 开展自动驾驶相关研究合作。此前，我在中山大学跟随<a href="https://seit.sysu.edu.cn/teacher/HuHaifeng">胡海峰教授</a>和<a href="https://ise.sysu.edu.cn/teacher/1492">胡伟鹏教授</a>研究跨模态人脸识别与行人重识别。','html.parser'))
 news=s.select('.news-row p')
 s.select_one('[data-news="copo"] p').clear();s.select_one('[data-news="copo"] p').append(BeautifulSoup('<a href="files/CoPo-KDD2026.pdf"><strong>CoPo</strong></a> 发表于 <strong>KDD 2026</strong>：以几何引导的表征实现一致的车道与交通拓扑推理。','html.parser'))

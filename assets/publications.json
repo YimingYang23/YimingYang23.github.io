@@ -24,10 +24,6 @@
   {
     "title": "RoXDrive: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving via Action-Faithful Rollouts",
     "authors": "Hongbin Lin, Chaoda Zheng, Yiming Yang, Xiangyu Li, Shijia Chen, Jinhao Deng, Kangjie Chen, Dongbin Zhang, Jie Feng, Yu Zhang, Xianming Liu, Shuguang Cui, Boyang Wang, Zhen Li",
-    "equal_contribution": [
-      "Hongbin Lin",
-      "Chaoda Zheng"
-    ],
     "venue": "Preprint · 2026",
     "year": 2026,
     "image": "assets/roxdrive-framework.webp",
