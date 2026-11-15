@@ -61,10 +61,16 @@ Replaced the TopoStreamer entry with its accepted TopoX / KDD 2027 version, reta
 
 Replaced FASTopoWM with DualTopo, using the author-provided current manuscript, framework and author order. The paper link serves that manuscript; code and weights link to the DualTopo repositories. Status remains under review, and both CV entries are synchronized. Research and selected-paper counts stay unchanged.
 
-## Public visitor statistics
+## Public visitor map
 
-Flag Counter `Ete6` is shared by both language pages. Public statistics: https://info.flagcounter.com/Ete6. The widget records pageviews and IP-derived country/region visitor counts from November 2026; it does not recover earlier traffic. It loads once per page, only on `yimingyang23.github.io`, and loads eagerly even when the footer is offscreen. Local previews do not record visits. Failed/blocked image requests leave a statistics link instead of a broken image.
+Both language pages share Flag Counter `Ete6`. One hidden image counts production page loads; localhost does not count. The homepage renders its own interactive country/region map from public aggregates, never raw IP addresses. The cumulative pageview total includes repeat loads. Map counts use the provider's 24-hour visitor rule and UTC calendar months, not a rolling 30-day window or all-time unique people.
 
-The provider's default visitor window is 24 hours; pageviews count widget loads. Country totals are therefore not all-time unique people. The image may lag by about five minutes. VPNs/proxies and blocked images affect results. No raw IPs are published by this site. Free counters may expire after 30 days without a new visitor. No email/account was registered. Save this counter ID; use the public statistics page's Regenerate HTML or Ignore this browser links when needed. Privacy: https://s05.flagcounter.com/privacy.html.
+`scripts/sync_visitor_stats.py` reads the public country list and daily history, archives daily counts, and aggregates calendar months. During the provider's initial 48-hour warm-up, all-time country totals are used only in the month in which this new counter was created (November 2026). Unavailable or inconsistent source data fails the update without overwriting existing data. The UI shows last-update time and marks snapshots older than three hours as delayed.
+
+`.github/workflows/visitor-stats.yml` runs approximately hourly and on demand. It updates only `visitor-stats.json` on the dedicated `visitor-stats` branch. The homepage fetches that public JSON and falls back to `assets/visitor-stats.json` if unavailable. No new backend, credentials in browser code, or Pages rebuild per update is needed. GitHub scheduling and raw-content caching can delay refreshes. Daily history is archived to preserve earlier months. Free Flag Counters can expire after 30 days without a new visitor.
+
+Country map: Natural Earth 1:110m public-domain boundaries, simplified as projected SVG paths in `assets/visitor-world.json`; small-region locator dots supplement this scale. Country/region counts are IP-derived estimates, not city/province data. Public source: https://info.flagcounter.com/Ete6; privacy: https://s05.flagcounter.com/privacy.html.
+
+Validation: `python scripts/test_visitor_stats.py` checks year/month boundaries, provider date interpretation, source failures, and region-teaser exclusion.
 
 Added the SYNTAX scoring medical AI preprint (arXiv:2609.23553), with its framework and code link, to both homepage languages and CVs on November 16, 2026. There are now 24 website research entries; the first/co-first-author selection remains 11.

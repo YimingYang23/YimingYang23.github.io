@@ -1,20 +1,8 @@
 (() => {
   const zh = document.documentElement.lang === 'zh-CN';
-  // Count production page loads only; both languages share one counter.
+  // One shared tracking image per production page. Local previews never count.
   const counter = document.querySelector('[data-counter-src]');
-  if (counter && location.hostname === 'yimingyang23.github.io') {
-    const fallback = counter.parentElement.querySelector('.counter-fallback');
-    counter.addEventListener('load', () => {
-      counter.hidden = false;
-      fallback.hidden = true;
-    }, { once: true });
-    counter.addEventListener('error', () => {
-      counter.hidden = true;
-      fallback.hidden = false;
-    }, { once: true });
-    counter.src = counter.dataset.counterSrc;
-  }
-
+  if (counter && location.hostname === 'yimingyang23.github.io') counter.src = counter.dataset.counterSrc;
   const t = (en, cn) => zh ? cn : en;
   document.querySelector('.publication-tools').hidden = false;
   const papers = [...document.querySelectorAll('.paper')];
