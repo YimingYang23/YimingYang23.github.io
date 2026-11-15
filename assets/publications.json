@@ -1,5 +1,23 @@
 [
   {
+    "title": "TopoX: Spatio-Temporal Lane Graph Generation via Iterative Positional Embedding and Denoising",
+    "authors": "Yiming Yang, Yueru Luo, Hongbin Lin, Bingkun He, Suzhong Fu, Chao Yan, Yameng Wang, Chao Zheng, Chen Lv, Shuguang Cui, Zhen Li",
+    "venue": "KDD 2027 · Accepted",
+    "year": 2027,
+    "image": "assets/topox-framework.webp",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/YimingYang23/TopoX"
+      },
+      {
+        "label": "Weights",
+        "url": "https://huggingface.co/y352184741/TopoX"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
     "title": "Geometry-Guided Representations for Coherent Lane and Traffic Topology Reasoning in Driving Scenes",
     "authors": "Yueru Luo, Changqing Zhou, Yiming Yang, Erlong Li, Chao Zheng, Shuguang Cui, Zhen Li",
     "venue": "KDD 2026",
@@ -135,24 +153,6 @@
       {
         "label": "Code",
         "url": "https://github.com/YimingYang23/FASTopoWM"
-      }
-    ],
-    "topic": "Autonomous driving"
-  },
-  {
-    "title": "TopoStreamer: Temporal Lane Segment Topology Reasoning in Autonomous Driving",
-    "authors": "Yiming Yang, Yueru Luo, Bingkun He, Hongbin Lin, Suzhong Fu, Chao Zheng, Zhipeng Cao, Erlong Li, Chao Yan, Shuguang Cui, Zhen Li*",
-    "venue": "Preprint · 2025",
-    "year": 2025,
-    "image": "images/TopoStreamer.png",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/pdf/2507.00709"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/YimingYang23/TopoStreamer"
       }
     ],
     "topic": "Autonomous driving"

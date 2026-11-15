@@ -52,3 +52,7 @@ The Selected toggle combines with topic and text filters. It includes papers who
 ## November 2, 2026 update
 
 Added RoXDrive as a 2026 preprint, with its method framework and paper/code links. The NTU visiting appointment is now marked ongoing for October 2026–October 2027 in both page languages.
+
+## November 16, 2026 update
+
+Replaced the TopoStreamer entry with its accepted TopoX / KDD 2027 version, retaining one research entry and first-author selection. Updated authors, framework, code and weight links, and acceptance news. Both CVs now list TopoX among accepted publications instead of manuscripts under review. The arXiv record still carries the earlier title, so the new card links to code and weights.

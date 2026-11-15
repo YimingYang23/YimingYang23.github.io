@@ -13,6 +13,7 @@ s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大
 s.select_one('meta[property="og:title"]')['content']='Yiming Yang · 自动驾驶与视觉智能'
 s.select_one('meta[property="og:description"]')['content']='研究论文、动态演示与学术经历。香港中文大学（深圳）· 正在南洋理工大学 AutoMan Lab 访问。'
 translations={
+'Weights':'模型权重','KDD 2027 · Accepted':'KDD 2027 · 已录用','NOV 2026':'2026 年 11 月',
 'Advisor: Prof. Huaibo Song':'导师：宋怀波教授',
 'Selected':'精选',
 'Under review':'在投','* Equal contribution':'* 共同第一作者',
@@ -93,6 +94,8 @@ for button in s.select('[data-scene]'):
  button['aria-label']=('时序建模 ' if button.find_parent(class_='demo-panel')['data-project']=='surround-view' else 'VLM 理解 ')+button.span.get_text(strip=True)
 for venue in s.select('.venue'):
  if venue.get_text().startswith('Preprint'):venue.string=venue.get_text().replace('Preprint','预印本')
+s.select_one('[data-news="topox"] p').clear()
+s.select_one('[data-news="topox"] p').append(BeautifulSoup('<a href="https://github.com/YimingYang23/TopoX"><strong>TopoX</strong></a> 被 <strong>KDD 2027</strong> 录用，代码与预训练权重已开源。','html.parser'))
 s.select_one('[data-news="qe"] p').clear()
 s.select_one('[data-news="qe"] p').append(BeautifulSoup('通过<strong>博士资格考试（QE）</strong>，成为<strong>博士候选人（Ph.D. Candidate）</strong>。','html.parser'))
 (root/'zh.html').write_text(str(s),encoding='utf-8')
