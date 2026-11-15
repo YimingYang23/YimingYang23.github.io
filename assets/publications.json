@@ -80,6 +80,28 @@
     "topic": "Autonomous driving"
   },
   {
+    "title": "DualTopo: Spatio-Temporal Lane Graph Generation with Dual Latent World Models and Parallel Query Supervision",
+    "authors": "Yiming Yang, Hongbin Lin, Yueru Luo, Suzhong Fu, Chao Zheng, Xinrui Yan, Kun Tang, Chen Lv, Shuguang Cui, Zhen Li",
+    "venue": "Under review",
+    "year": 2026,
+    "image": "assets/dualtopo-framework.webp",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "files/DualTopo.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/YimingYang23/DualTopo"
+      },
+      {
+        "label": "Weights",
+        "url": "https://huggingface.co/y352184741/DualTopo"
+      }
+    ],
+    "topic": "Autonomous driving"
+  },
+  {
     "title": "DriveFlow: Rectified Flow Adaptation for Robust 3D Object Detection in Autonomous Driving",
     "authors": "Hongbin Lin, Yiming Yang, Chaoda Zheng, Yifan Zhang, Shuangcheng Niu, Zilu Guo, Yafeng Li, Gui Gui, Shuguang Cui, Zhen Li*",
     "venue": "AAAI 2026",
@@ -135,24 +157,6 @@
       {
         "label": "Paper",
         "url": "https://arxiv.org/abs/2512.11226"
-      }
-    ],
-    "topic": "Autonomous driving"
-  },
-  {
-    "title": "FASTopoWM: Fast-Slow Lane Segment Topology Reasoning with Latent World Models",
-    "authors": "Yiming Yang, Hongbin Lin, Yueru Luo, Suzhong Fu, Chao Zheng, Xinrui Yan, Shuqi Mei, Kun Tang, Shuguang Cui, Zhen Li*",
-    "venue": "Preprint · 2025",
-    "year": 2025,
-    "image": "images/FASTopoWM.png",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/pdf/2507.23325"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/YimingYang23/FASTopoWM"
       }
     ],
     "topic": "Autonomous driving"

@@ -14,3 +14,5 @@
 - RoXDrive: Figure 3 (method framework), title, authors, and paper/code links from the author-supplied `2609.36851v2.pdf` (arXiv version dated September 30, 2026).
 
 - TopoX: framework image and updated author order from the author's TopoX release repository (2026-11). Replaces the previous TopoStreamer publication entry; KDD 2027 acceptance supplied by the author and announced in the repository.
+
+- DualTopo: author-provided IEEE TITS manuscript, `TopoWM/IEEE TITS/IEEE-Transactions-LaTeX2e-templates-and-instructions/main.pdf`; Figure 2 is the framework thumbnail. The full manuscript is copied without changes to `files/DualTopo.pdf`. Title and authors follow this manuscript; it replaces FASTopoWM without creating a duplicate entry.

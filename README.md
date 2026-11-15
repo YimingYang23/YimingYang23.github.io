@@ -56,3 +56,7 @@ Added RoXDrive as a 2026 preprint, with its method framework and paper/code link
 ## November 16, 2026 update
 
 Replaced the TopoStreamer entry with its accepted TopoX / KDD 2027 version, retaining one research entry and first-author selection. Updated authors, framework, code and weight links, and acceptance news. Both CVs now list TopoX among accepted publications instead of manuscripts under review. The arXiv record still carries the earlier title, so the new card links to code and weights.
+
+## DualTopo update — November 16, 2026
+
+Replaced FASTopoWM with DualTopo, using the author-provided current manuscript, framework and author order. The paper link serves that manuscript; code and weights link to the DualTopo repositories. Status remains under review, and both CV entries are synchronized. Research and selected-paper counts stay unchanged.
