@@ -13,6 +13,8 @@ s.select_one('meta[name=description]')['content']='Yiming Yang，香港中文大
 s.select_one('meta[property="og:title"]')['content']='Yiming Yang · 自动驾驶与视觉智能'
 s.select_one('meta[property="og:description"]')['content']='研究论文、动态演示与学术经历。香港中文大学（深圳）· 正在南洋理工大学 AutoMan Lab 访问。'
 translations={
+'Visitors around the world':'访客足迹','Pageviews and countries / regions · Since November 2026':'总浏览量与国家／地区分布 · 自 2026 年 11 月起',
+'View statistics ↗':'详细统计 ↗','Privacy':'隐私说明','Powered by Flag Counter. Location is estimated from IP.':'由 Flag Counter 提供统计，地区根据 IP 估算。','Open visitor statistics ↗':'查看访问统计 ↗',
 'Weights':'模型权重','NOV 2026':'2026 年 11 月',
 'Advisor: Prof. Huaibo Song':'导师：宋怀波教授',
 'Selected':'精选',
@@ -88,6 +90,8 @@ for link in s.select('.profile-links a[data-cv-language]'):
   link['href']='files/Yiming_Yang_CV.pdf';label=' 英文简历'
  for text in list(link.find_all(string=True)):
   if str(text).strip():text.replace_with(label)
+s.select_one('.visitor-counter')['aria-label']='查看公开访问统计'
+s.select_one('.visitor-counter img')['alt']='各国家或地区访客数、总浏览量与地区数量'
 s.select_one('#result-count').string=f"{len(s.select('.paper'))} 篇论文"
 s.select_one('#selected-papers')['title']='筛选第一作者及共同第一作者论文'
 for button in s.select('[data-scene]'):

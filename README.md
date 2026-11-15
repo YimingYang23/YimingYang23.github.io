@@ -60,3 +60,9 @@ Replaced the TopoStreamer entry with its accepted TopoX / KDD 2027 version, reta
 ## DualTopo update — November 16, 2026
 
 Replaced FASTopoWM with DualTopo, using the author-provided current manuscript, framework and author order. The paper link serves that manuscript; code and weights link to the DualTopo repositories. Status remains under review, and both CV entries are synchronized. Research and selected-paper counts stay unchanged.
+
+## Public visitor statistics
+
+Flag Counter `Ete6` is shared by both language pages. Public statistics: https://info.flagcounter.com/Ete6. The widget records pageviews and IP-derived country/region visitor counts from November 2026; it does not recover earlier traffic. It loads once per page, only on `yimingyang23.github.io`, and loads eagerly even when the footer is offscreen. Local previews do not record visits. Failed/blocked image requests leave a statistics link instead of a broken image.
+
+The provider's default visitor window is 24 hours; pageviews count widget loads. Country totals are therefore not all-time unique people. The image may lag by about five minutes. VPNs/proxies and blocked images affect results. No raw IPs are published by this site. Free counters may expire after 30 days without a new visitor. No email/account was registered. Save this counter ID; use the public statistics page's Regenerate HTML or Ignore this browser links when needed. Privacy: https://s05.flagcounter.com/privacy.html.
