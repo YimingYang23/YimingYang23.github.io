@@ -3,21 +3,23 @@
   "counter": "Ete6",
   "timezone": "UTC",
   "tracking_started": "2026-11-15",
-  "updated_at": "2026-11-15T17:19:04+00:00",
+  "updated_at": "2026-11-15T22:56:58+00:00",
   "current_month": "2026-11",
   "totals": {
-    "pageviews": 2,
-    "visitors": 1
+    "pageviews": 12,
+    "visitors": 6
   },
   "countries": {
-    "CN": 1
+    "CN": 4,
+    "SG": 2
   },
   "months": {
     "2026-11": {
-      "pageviews": 2,
-      "visitors": 1,
+      "pageviews": 12,
+      "visitors": 6,
       "countries": {
-        "CN": 1
+        "CN": 4,
+        "SG": 2
       },
       "complete": true
     }
