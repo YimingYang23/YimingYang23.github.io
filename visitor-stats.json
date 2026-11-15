@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "counter": "Ete6",
+  "timezone": "UTC",
+  "tracking_started": "2026-11-15",
+  "updated_at": "2026-11-15T17:15:22+00:00",
+  "current_month": "2026-11",
+  "totals": {
+    "pageviews": 2,
+    "visitors": 1
+  },
+  "countries": {
+    "CN": 1
+  },
+  "months": {
+    "2026-11": {
+      "pageviews": 2,
+      "visitors": 1,
+      "countries": {
+        "CN": 1
+      },
+      "complete": true
+    }
+  },
+  "daily": {}
+}
