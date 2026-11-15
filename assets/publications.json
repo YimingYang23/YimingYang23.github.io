@@ -134,6 +134,24 @@
     "topic": "Autonomous driving"
   },
   {
+    "title": "Modeling Clinical Workflow for SYNTAX Scoring from Coronary Angiography Videos",
+    "authors": "Suzhong Fu, Jingqi Dong, Xuan Ding, Rui Sun, Yiming Yang, Shuguang Cui, Zhen Li",
+    "venue": "Preprint · 2026",
+    "year": 2026,
+    "image": "assets/syntax-scoring-framework.webp",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2609.23553"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/VersaceSu7/SYNTAX_score_777"
+      }
+    ],
+    "topic": "Medical AI"
+  },
+  {
     "title": "AgentsEval: Clinically Faithful Evaluation of Medical Imaging Reports via Multi-Agent Reasoning",
     "authors": "Suzhong Fu, Jingqi Dong, Xuan Ding, Rui Sun, Yiming Yang, Shuguang Cui, Zhen Li",
     "venue": "Preprint · 2026",

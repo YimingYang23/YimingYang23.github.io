@@ -37,7 +37,7 @@ The original site used styling adapted from Zeqing Yuan's academic homepage. The
 
 ## September 7 publication audit
 
-The bilingual pages contain 23 research works, including two manuscripts under review (TopoMind and TopoVLM) shown without full-text links. TopoMind marks Yihuan Yao and Yiming Yang as equal contributors. The previous Scholar audit covered 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
+The bilingual pages contain 24 research works, including two manuscripts under review (TopoMind and TopoVLM) shown without full-text links. TopoMind marks Yihuan Yao and Yiming Yang as equal contributors. The previous Scholar audit covered 20 distinct publications and preprints. Google Scholar lists 22 records: the two Chinese journal papers are omitted by author request, and the earlier RelTopo record is represented by its published CoPo version. AgentsEval and FutureX were added after comparison; Reasoning to Regulate (arXiv:2607.24199) was supplied separately by the author.
 
 The two demo categories highlight temporal modeling and VLM understanding. Embedded method-name headers are replaced with generic labels in all eight web videos and their thumbnails; the original author media remain in private backups.
 
@@ -66,3 +66,5 @@ Replaced FASTopoWM with DualTopo, using the author-provided current manuscript, 
 Flag Counter `Ete6` is shared by both language pages. Public statistics: https://info.flagcounter.com/Ete6. The widget records pageviews and IP-derived country/region visitor counts from November 2026; it does not recover earlier traffic. It loads once per page, only on `yimingyang23.github.io`, and loads eagerly even when the footer is offscreen. Local previews do not record visits. Failed/blocked image requests leave a statistics link instead of a broken image.
 
 The provider's default visitor window is 24 hours; pageviews count widget loads. Country totals are therefore not all-time unique people. The image may lag by about five minutes. VPNs/proxies and blocked images affect results. No raw IPs are published by this site. Free counters may expire after 30 days without a new visitor. No email/account was registered. Save this counter ID; use the public statistics page's Regenerate HTML or Ignore this browser links when needed. Privacy: https://s05.flagcounter.com/privacy.html.
+
+Added the SYNTAX scoring medical AI preprint (arXiv:2609.23553), with its framework and code link, to both homepage languages and CVs on November 16, 2026. There are now 24 website research entries; the first/co-first-author selection remains 11.

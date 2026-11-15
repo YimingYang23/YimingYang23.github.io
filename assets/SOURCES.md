@@ -16,3 +16,5 @@
 - TopoX: framework image and updated author order from the author's TopoX release repository (2026-11). Replaces the previous TopoStreamer publication entry; KDD 2027 acceptance supplied by the author and announced in the repository.
 
 - DualTopo: author-provided IEEE TITS manuscript, `TopoWM/IEEE TITS/IEEE-Transactions-LaTeX2e-templates-and-instructions/main.pdf`; Figure 2 is the framework thumbnail. The full manuscript is copied without changes to `files/DualTopo.pdf`. Title and authors follow this manuscript; it replaces FASTopoWM without creating a duplicate entry.
+
+- SYNTAX scoring: Figure 2 framework, title and authors from arXiv:2609.23553v1 (September 20, 2026). Paper/code links follow the arXiv record. Listed as a medical AI preprint.
