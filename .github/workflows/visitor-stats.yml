@@ -13,17 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           path: source
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: visitor-stats
           path: statistics
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: pip install beautifulsoup4==4.13.4
+      - name: Test statistics parsing
+        run: python source/scripts/test_visitor_stats.py
       - name: Read public aggregate history
         run: |
           cp statistics/visitor-stats.json source/assets/visitor-stats.json

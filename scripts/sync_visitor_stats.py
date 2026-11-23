@@ -1,12 +1,15 @@
 """Read public aggregate counts, preserving calendar-month history. Never fetch tracking images."""
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta, date
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.request import Request, urlopen
+from urllib.error import URLError
 from urllib.parse import urljoin, urlparse
 import json
 import re
+import copy
+import time
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -69,6 +72,61 @@ def aggregate_months(daily):
             month['countries'][code] = month['countries'].get(code, 0) + count
     return months
 
+def date_range(first, last):
+    start, stop = date.fromisoformat(first), date.fromisoformat(last)
+    return [(start + timedelta(days=i)).isoformat() for i in range((stop - start).days + 1)]
+
+def recover_initial_daily(old):
+    """Recover a single omitted setup day only when archived totals prove it."""
+    daily = copy.deepcopy(old.get('daily', {}))
+    if not old.get('updated_at') or not old.get('totals'):
+        return daily
+    end = datetime.fromisoformat(old['updated_at']).astimezone(timezone.utc).date().isoformat()
+    days = date_range(old.get('tracking_started', START), end)
+    missing = [d for d in days if not {'visitors', 'pageviews'} <= daily.get(d, {}).keys()]
+    if len(missing) == 1:
+        target = daily.get(missing[0], {})
+        known = [daily[d] for d in days if d != missing[0]]
+        visitors = old['totals']['visitors'] - sum(row['visitors'] for row in known)
+        views = old['totals']['pageviews'] - sum(row['pageviews'] for row in known)
+        # Country history independently records this omitted setup day's visits.
+        if 'countries' in target and sum(target['countries'].values()) == visitors and 0 <= visitors <= views:
+            target.update(visitors=visitors, pageviews=views)
+            daily[missing[0]] = target
+    return daily
+
+def parse_totals(overall, rows, countries, old, today):
+    text = overall.get_text(' ', strip=True)
+    match = re.search(r'viewed\s+([\d,]+)\s+times by\s+([\d,]+)\s+visitor', text)
+    if match:
+        totals = {'pageviews': number(match[1]), 'visitors': number(match[2])}
+        source = 'provider_summary'
+    else:
+        if not old.get('updated_at') or not old.get('totals'):
+            raise ValueError('Cumulative summary absent and no trusted previous snapshot')
+        anchor = datetime.fromisoformat(old['updated_at']).astimezone(timezone.utc).date().isoformat()
+        previous = old.get('daily', {}).get(anchor, {})
+        if anchor > today or not {'visitors', 'pageviews'} <= previous.keys():
+            raise ValueError('Previous snapshot has no usable UTC anchor-day counts')
+        days = date_range(anchor, today)
+        if not days or any(day not in rows for day in days):
+            raise ValueError('Incomplete daily coverage since last snapshot; totals cannot be reconstructed')
+        increments = [sum(rows[d][i] for d in days) - previous[key]
+                      for i, key in enumerate(['visitors', 'pageviews'])]
+        if any(n < 0 for n in increments):
+            raise ValueError('Daily counts decreased since last snapshot')
+        totals = {'visitors': old['totals']['visitors'] + increments[0],
+                  'pageviews': old['totals']['pageviews'] + increments[1]}
+        source = 'archived_total_plus_daily_history'
+    if totals['visitors'] != sum(countries.values()):
+        raise ValueError('Source changed during sync; retry later rather than mix snapshots')
+    if totals['pageviews'] < old.get('totals', {}).get('pageviews', 0) or totals['pageviews'] < totals['visitors']:
+        raise ValueError('Counter reset or incomplete response detected')
+    for code, previous in old.get('countries', {}).items():
+        if countries.get(code, 0) < previous:
+            raise ValueError('Country total decreased; preserving previous snapshot')
+    return totals, source
+
 def collect():
     old = json.loads(OUTPUT.read_text(encoding='utf-8')) if OUTPUT.exists() else {}
     countries = {}
@@ -89,16 +147,10 @@ def collect():
         if len(seen) > 30:
             raise ValueError('Unexpected country pagination')
     overall, today = fetch('/more30/' + COUNTER + '/')
-    m = re.search(r'viewed\s+([\d,]+)\s+times by\s+([\d,]+)\s+visitor', overall.get_text(' ', strip=True))
-    if not m:
-        raise ValueError('Pageview totals unavailable')
-    totals = {'pageviews': number(m[1]), 'visitors': number(m[2])}
-    if totals['visitors'] != sum(countries.values()):
-        raise ValueError('Source changed during sync; retry later rather than mix snapshots')
-    if totals['pageviews'] < old.get('totals', {}).get('pageviews', 0):
-        raise ValueError('Counter reset or incomplete response detected')
-    daily = old.get('daily', {})
-    for day, values in daily_rows(overall, today, 2).items():
+    rows = daily_rows(overall, today, 2)
+    totals, totals_source = parse_totals(overall, rows, countries, old, today)
+    daily = recover_initial_daily(old)
+    for day, values in rows.items():
         daily.setdefault(day, {}).update(visitors=values[0], pageviews=values[1])
     def country_history(code):
         soup, day = fetch('/detail30/' + code.lower() + '/' + COUNTER)
@@ -125,10 +177,20 @@ def collect():
             raise ValueError('Current month country totals do not match daily visitor totals')
     result = {'version': 1, 'counter': COUNTER, 'timezone': 'UTC', 'tracking_started': START,
               'updated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
-              'current_month': current, 'totals': totals, 'countries': countries,
+              'current_month': current, 'totals': totals, 'totals_source': totals_source, 'countries': countries,
               'months': months, 'daily': daily}
-    OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    temp = OUTPUT.with_suffix('.tmp')
+    temp.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    temp.replace(OUTPUT)
     print(f"Synced {current}: {totals['pageviews']} pageviews, {len(countries)} countries/regions")
 
 if __name__ == '__main__':
-    collect()
+    for attempt in range(3):
+        try:
+            collect()
+            break
+        except (ValueError, URLError, TimeoutError) as error:
+            if attempt == 2:
+                raise
+            print(f'Sync attempt {attempt + 1} failed: {error}; retrying without replacing data.')
+            time.sleep(3 * (attempt + 1))

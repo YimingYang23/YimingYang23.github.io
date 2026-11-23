@@ -74,3 +74,9 @@ Country map: Natural Earth 1:110m public-domain boundaries, simplified as projec
 Validation: `python scripts/test_visitor_stats.py` checks year/month boundaries, provider date interpretation, source failures, and region-teaser exclusion.
 
 Added the SYNTAX scoring medical AI preprint (arXiv:2609.23553), with its framework and code link, to both homepage languages and CVs on November 16, 2026. There are now 24 website research entries; the first/co-first-author selection remains 11.
+
+### Statistics sync recovery — November 23, 2026
+
+Flag Counter can omit the cumulative summary from its history page. When that happens, the sync uses the previous successful total plus validated daily increments, including changes to the previous snapshot's UTC day. Every intervening date must be present, and the resulting visitor total must match the country totals. It never treats a partial-history sum as the lifetime total. A single omitted setup day is recoverable only when archived totals and independent country history prove its counts. Source failures retry up to three times and leave the existing JSON intact; writes are atomic.
+
+The workflow runs the parser regression tests before fetching statistics and uses Node.js 24-compatible `actions/checkout@v6` and `actions/setup-python@v6`.
