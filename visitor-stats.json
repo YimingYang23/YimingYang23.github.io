@@ -3,12 +3,13 @@
   "counter": "Ete6",
   "timezone": "UTC",
   "tracking_started": "2026-11-15",
-  "updated_at": "2026-11-19T22:15:34+00:00",
+  "updated_at": "2026-11-23T09:24:30+00:00",
   "current_month": "2026-11",
   "totals": {
-    "pageviews": 23,
-    "visitors": 15
+    "visitors": 15,
+    "pageviews": 23
   },
+  "totals_source": "archived_total_plus_daily_history",
   "countries": {
     "CN": 7,
     "US": 5,
@@ -16,8 +17,8 @@
   },
   "months": {
     "2026-11": {
-      "pageviews": 23,
       "visitors": 15,
+      "pageviews": 23,
       "countries": {
         "CN": 7,
         "US": 5,
@@ -39,7 +40,9 @@
       "countries": {
         "CN": 4,
         "SG": 2
-      }
+      },
+      "visitors": 6,
+      "pageviews": 12
     },
     "2026-11-17": {
       "visitors": 6,
@@ -66,6 +69,42 @@
         "CN": 2,
         "SG": 0,
         "US": 1
+      }
+    },
+    "2026-11-23": {
+      "visitors": 0,
+      "pageviews": 0,
+      "countries": {
+        "CN": 0,
+        "SG": 0,
+        "US": 0
+      }
+    },
+    "2026-11-22": {
+      "visitors": 0,
+      "pageviews": 0,
+      "countries": {
+        "CN": 0,
+        "SG": 0,
+        "US": 0
+      }
+    },
+    "2026-11-21": {
+      "visitors": 0,
+      "pageviews": 0,
+      "countries": {
+        "CN": 0,
+        "SG": 0,
+        "US": 0
+      }
+    },
+    "2026-11-20": {
+      "visitors": 0,
+      "pageviews": 0,
+      "countries": {
+        "CN": 0,
+        "SG": 0,
+        "US": 0
       }
     }
   }
