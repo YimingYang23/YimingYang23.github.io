@@ -19,4 +19,3 @@
 
 - SYNTAX scoring: Figure 2 framework, title and authors from arXiv:2609.23553v1 (September 20, 2026). Paper/code links follow the arXiv record. Listed as a medical AI preprint.
 
-- Visitor map: Natural Earth 1:110m admin-0 boundaries (public domain), https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson. Geographic data is simplified to local SVG paths; selected small regions use locator dots. Counts come from this site's public Flag Counter Ete6 daily aggregate tables.

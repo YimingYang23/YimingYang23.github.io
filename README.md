@@ -61,22 +61,10 @@ Replaced the TopoStreamer entry with its accepted TopoX / KDD 2027 version, reta
 
 Replaced FASTopoWM with DualTopo, using the author-provided current manuscript, framework and author order. The paper link serves that manuscript; code and weights link to the DualTopo repositories. Status remains under review, and both CV entries are synchronized. Research and selected-paper counts stay unchanged.
 
-## Public visitor map
+## Cumulative visitor count
 
-Both language pages share Flag Counter `Ete6`. One hidden image counts production page loads; localhost does not count. The homepage renders its own interactive country/region map from public aggregates, never raw IP addresses. The cumulative pageview total includes repeat loads. Map counts use the provider's 24-hour visitor rule and UTC calendar months, not a rolling 30-day window or all-time unique people.
+The footer shows only total visitors, shared by both language pages, using Flag Counter Ete6. Its default 24-hour deduplication applies: this is not a lifetime count of distinct people. The production-only tracking image remains; local previews do not count. `assets/visitor-count.js` reads the hourly aggregate from the `visitor-stats` branch, with a local fallback and no fabricated zero when fetching fails.
 
-`scripts/sync_visitor_stats.py` reads the public country list and daily history, archives daily counts, and aggregates calendar months. During the provider's initial 48-hour warm-up, all-time country totals are used only in the month in which this new counter was created (November 2026). Unavailable or inconsistent source data fails the update without overwriting existing data. The UI shows last-update time and marks snapshots older than three hours as delayed.
-
-`.github/workflows/visitor-stats.yml` runs approximately hourly and on demand. It updates only `visitor-stats.json` on the dedicated `visitor-stats` branch. The homepage fetches that public JSON and falls back to `assets/visitor-stats.json` if unavailable. No new backend, credentials in browser code, or Pages rebuild per update is needed. GitHub scheduling and raw-content caching can delay refreshes. Daily history is archived to preserve earlier months. Free Flag Counters can expire after 30 days without a new visitor.
-
-Country map: Natural Earth 1:110m public-domain boundaries, simplified as projected SVG paths in `assets/visitor-world.json`; small-region locator dots supplement this scale. Country/region counts are IP-derived estimates, not city/province data. Public source: https://info.flagcounter.com/Ete6; privacy: https://s05.flagcounter.com/privacy.html.
-
-Validation: `python scripts/test_visitor_stats.py` checks year/month boundaries, provider date interpretation, source failures, and region-teaser exclusion.
+The hourly workflow publishes only `totals.visitors` and update metadata. No country breakdowns, monthly aggregates, or map assets are rendered or generated. The upstream provider supplies country totals that the script sums in memory, without double-counting subregions. Decreasing or invalid totals are rejected; bounded retries and atomic writes preserve the previous valid count. `python scripts/test_visitor_stats.py` checks these behaviors. Previous map data is backed up privately.
 
 Added the SYNTAX scoring medical AI preprint (arXiv:2609.23553), with its framework and code link, to both homepage languages and CVs on November 16, 2026. There are now 24 website research entries; the first/co-first-author selection remains 11.
-
-### Statistics sync recovery — November 23, 2026
-
-Flag Counter can omit the cumulative summary from its history page. When that happens, the sync uses the previous successful total plus validated daily increments, including changes to the previous snapshot's UTC day. Every intervening date must be present, and the resulting visitor total must match the country totals. It never treats a partial-history sum as the lifetime total. A single omitted setup day is recoverable only when archived totals and independent country history prove its counts. Source failures retry up to three times and leave the existing JSON intact; writes are atomic.
-
-The workflow runs the parser regression tests before fetching statistics and uses Node.js 24-compatible `actions/checkout@v6` and `actions/setup-python@v6`.
